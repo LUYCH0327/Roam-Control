@@ -153,6 +153,14 @@ Open **Settings → Privacy → What Is Shared** for the same disclosure inside 
 
 ## Troubleshooting
 
+### Pairing notification does not appear in LiveContainer
+
+For LiveContainer installs, enable **Fix Local Notifications** for Roam Control before its first run:
+
+**LiveContainer → Apps → long-press Roam Control → App Settings → Fix Local Notifications → On**
+
+LiveContainer may relay the notification with sandbox or container-style details. Tapping it should still return to the correct Roam Control instance and allow pairing to continue normally.
+
 ### LocalDevVPN says Connected, but Roam Control cannot find the iPhone
 
 Check whether you are using Wi-Fi or mobile data. On Wi-Fi, tap **Try Again**. On 4G or 5G, choose the mobile-data flow and briefly turn mobile data off. If the message mentions an outdated announcement, toggle LocalDevVPN off and on once to create a fresh device announcement.

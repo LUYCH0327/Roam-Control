@@ -65,7 +65,9 @@ Roam Control is distributed as a prebuilt IPA. The application source code is no
 
 Roam Control is not distributed through the App Store or TestFlight.
 
-Download the IPA attached to the current GitHub Release and install it using SideStore.
+Download the IPA attached to the current GitHub Release and install it using SideStore, or import it into LiveContainer.
+
+For LiveContainer installs, **Fix Local Notifications must be enabled before Roam Control's first run** so the pairing notification can be delivered correctly.
 
 Read the [Installation Guide](Documentation/Installation.md) before installing.
 
