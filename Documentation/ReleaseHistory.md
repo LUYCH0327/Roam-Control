@@ -11,6 +11,7 @@ Current stable public release.
 Released 26 September 2026.
 
 - Added Backup & Restore.
+- Added freehand route drawing and redesigned walking-route controls.
 - Added Mainland China coordinate compatibility.
 - Improved walking, session recovery and Stop & Restore behaviour.
 - Improved update checking and Personal VPN guidance.

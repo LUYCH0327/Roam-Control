@@ -52,7 +52,7 @@ Roam Control is distributed as a prebuilt IPA. The application source code is no
 
 - Search for places, enter coordinates or select a position on the map.
 - Start and update a fixed reported location.
-- Preview and simulate Apple Maps walking routes.
+- Preview and simulate Apple Maps walking routes, or build routes manually with point-by-point and freehand drawing.
 - Pause, resume, reverse or redirect an active walk.
 - Save favourites and revisit recent locations.
 - Restore the iPhone's real location when testing is finished.

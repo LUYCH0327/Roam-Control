@@ -8,27 +8,51 @@ Detailed internal engineering notes are maintained privately.
 
 Released 26 September 2026.
 
-### New
+### Backup & Restore
 
-- Added Backup & Restore for favourites, history and supported app preferences.
-- Added Mainland China coordinate compatibility for searched and selected locations.
-- Added Automatic, Off and Force Correction location compatibility modes.
-- Added advance guidance for the one-time app migration planned for Roam Control 0.9.5.
-
-### Improved
-
-- Improved location correction handling without changing manually entered coordinates.
-- Improved walking-route and active-session behaviour.
-- Refined Stop & Restore messaging and recovery behaviour.
-- Improved stable-release update checking so prereleases are ignored.
-- Updated Connection Health guidance for compatible Personal VPNs and Device VPN conflicts.
-- Restored an immutable packaged build timestamp so SideStore re-signing does not change the displayed build time.
-
-### Backup & migration
-
+- Added Backup & Restore in Settings.
 - Backups include favourites, history, appearance, map style and location compatibility preferences.
 - Pairing records, analytics consent and identity, active-session recovery state and diagnostics are deliberately excluded.
-- Roam Control 0.9.4 can remind users to create a fresh backup before moving to 0.9.5.
+- Added migration preparation for Roam Control 0.9.5, including reminders to create a fresh backup before moving to the new app identifier.
+
+### Walking routes and map controls
+
+- Added freehand route drawing alongside point-by-point manual route creation.
+- Added Points and Freehand route-drawing modes.
+- Added one-finger freehand drawing with two-finger map pan, zoom and rotation.
+- Added stroke-based Undo for freehand routes.
+- Redesigned walking and route-planning controls into a more compact, responsive layout.
+- Added collapsible location and Route Planning cards.
+- Kept Pause, Resume and Stop & Restore readily accessible during active walking sessions.
+- Added clearer Start and End route markers.
+- Refined walking progress presentation and route-preview behaviour.
+- Preserved normal map pin selection outside freehand drawing mode.
+
+### Location compatibility
+
+- Added automatic Mainland China coordinate correction for searched and selected locations.
+- Added Off, Automatic and Force Correction location compatibility modes.
+- Applied compatibility correction only to the final simulated device location so the map marker remains at the location the user selected.
+- Kept manually entered coordinates unchanged by automatic correction.
+- Improved location compatibility and correction handling around fixed and walking sessions.
+
+### Sessions and restoration
+
+- Refined Stop & Restore behaviour and messaging.
+- Improved guidance while iOS reacquires the real device location after simulation ends.
+- Improved active-session and recovery presentation without changing the underlying location-session workflow.
+
+### Updates and VPN guidance
+
+- Stable update checks now ignore GitHub draft and prerelease releases.
+- Updated Connection Health guidance to reflect tested coexistence with compatible Personal VPNs.
+- Clarified that VPN apps using the Device VPN connection can conflict with LocalDevVPN.
+- Improved troubleshooting guidance for temporarily pausing another VPN while keeping LocalDevVPN enabled.
+
+### Release and packaging
+
+- Restored an immutable packaged build timestamp so SideStore re-signing does not change the displayed build date and time.
+- Added release-package validation to reduce the risk of publishing a stale or incorrectly configured build.
 
 ## 0.9.3 - Build 63
 

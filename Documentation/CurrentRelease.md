@@ -23,14 +23,37 @@ SHA-256:
 
 ## Highlights
 
+### Data and migration
+
 - Added Backup & Restore for favourites, history and supported app preferences.
-- Added Mainland China coordinate compatibility for searched and selected locations.
-- Added Automatic, Off and Force Correction location compatibility modes.
-- Improved walking-route and active-session behaviour.
-- Improved Stop & Restore guidance and session recovery messaging.
-- Improved update checking so prerelease builds are not offered as stable updates.
-- Updated Connection Health guidance for compatible Personal VPNs.
-- Added preparation for the one-time app migration planned for Roam Control 0.9.5.
+- Backups can restore appearance, map style and location compatibility settings.
+- Added preparation for the one-time Roam Control 0.9.5 migration.
+
+### Freehand routes and walking
+
+- Added freehand route drawing alongside point-by-point route creation.
+- Added Points and Freehand drawing modes.
+- Draw with one finger while using two fingers to pan, zoom or rotate the map.
+- Undo freehand routes one stroke at a time.
+- Redesigned walking and route-planning controls into a more compact layout.
+- Added collapsible location and Route Planning cards.
+- Added clearer Start and End route markers.
+- Kept Pause, Resume and Stop & Restore readily available during active walks.
+- Refined route preview, walking progress and map behaviour.
+
+### Location compatibility
+
+- Added automatic coordinate correction for searched and selected locations in Mainland China.
+- Added Automatic, Off and Force Correction compatibility modes.
+- Correction is applied to the simulated device location while the selected map marker stays where the user chose it.
+- Manually entered coordinates are not automatically changed.
+
+### Sessions, updates and VPNs
+
+- Improved Stop & Restore guidance and real-location reacquisition messaging.
+- Stable update checks now ignore GitHub drafts and prereleases.
+- Updated Connection Health guidance for compatible Personal VPNs and Device VPN conflicts.
+- Restored an immutable packaged build timestamp so SideStore re-signing does not change the displayed build time.
 
 ## Backup & Restore
 
